@@ -8,6 +8,7 @@
 
 import React, {useCallback, useEffect} from 'react';
 import {SafeAreaView, StyleSheet, View} from 'react-native';
+import crashlytics from '@react-native-firebase/crashlytics';
 
 import Config from 'react-native-config';
 import Smartlook from 'smartlook-react-native-wrapper';
@@ -38,6 +39,7 @@ const App = () => {
   useEffect(() => {
     initSmartlook();
   }, []);
+
   return (
     <SafeAreaView style={styles.backgroundStyle}>
       <View></View>
