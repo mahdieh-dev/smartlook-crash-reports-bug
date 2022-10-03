@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import React, {useEffect} from 'react';
+import React, {useCallback, useEffect} from 'react';
 import {SafeAreaView, StyleSheet, View} from 'react-native';
 
 import Config from 'react-native-config';
@@ -40,7 +40,7 @@ const App = () => {
     initSmartlook();
   }, []);
   return (
-    <SafeAreaView style={backgroundStyle}>
+    <SafeAreaView style={styles.backgroundStyle}>
       <View></View>
     </SafeAreaView>
   );
